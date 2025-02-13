@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a202c;
+    color: #edf2f7;
+  }
+
+  .top-button {
+    margin-top: 20px;
+  }
+
+  .content-container {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: #2d3748;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  /* Button Styles for Upload and Delete (Used in Modal) */
+  .upload-btn {
+    background-color: #48BB78; /* Light Green */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .upload-btn:hover {
+    background-color: #38A169; /* Darker Green on hover */
+    transform: scale(1.05);
+  }
+
+  .delete-btn {
+    background-color: #F56565; /* Light Red */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .delete-btn:hover {
+    background-color: #E53E3E; /* Darker Red on hover */
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 505px) {
+    .modal-content {
+      width: 90%; /* Makes the modal slightly narrower */
+      max-width: 90%; /* Ensures a bit of space on either side */
+    }
+  }
