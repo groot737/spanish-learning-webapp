@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Guess Quiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-0 p-0 min-h-screen flex flex-col justify-center items-center bg-gray-900 text-gray-100">
+    <!-- Quiz Header -->
+    <div class="text-center">
+      <h1 class="text-3xl font-bold">გამოიცანი სიტყვები</h1>
+    </div>
+  
+    <!-- Quiz Content -->
+    <div id="quizContainer" class="mt-8 w-full max-w-3xl bg-gray-800 p-6 rounded-lg shadow-lg">
+      <!-- Question and Answers will be dynamically generated here -->
+    </div>
+  
+    <!-- Modal for Result -->
+    <div class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center" id="resultModal">
+      <div class="bg-gray-800 p-6 rounded-lg max-w-md w-full text-center">
+        <p id="modalMessage" class="text-lg font-bold mb-4"></p>
+        <div id="correctAnswer" class="hidden mt-3 text-white py-4 px-6 rounded-lg text-lg font-bold">
+          <span class="text-l">სწორი პასუხი:</span>
+          <span id="correctAnswerText" class="text-green-300 text-xl"></span>
+        </div>
+        <button class="mt-4 bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg font-bold uppercase transition-transform transform hover:scale-105" id="closeModal">
+          შემდეგი შეკითხვა
+        </button>
+      </div>
+    </div>
+
+</body>
+<script src="./test.js"></script>
+</html>
